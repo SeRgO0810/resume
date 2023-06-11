@@ -1,0 +1,71 @@
+<div>
+    <center>
+        <h1>{{name}}</h1>
+    </center>
+    <br>
+    <div>
+        <strong>Description:</strong>
+        <em>{{description}}</em>
+    </div>
+    <br>
+    <div>
+        {{#with history}}
+        <strong>History -</strong>
+        <em>year {{year}}, foulder:{{founder}}</em>
+        {{/with}}
+    </div>
+    <hr>
+    <div>
+        <div class="display-6">Types</div>
+        <ul>
+            <b>
+                <li>{{types}}</li>
+            </b>
+        </ul>
+    </div>
+    <div>
+        {{#with syntax}}
+        <div class="display-6">Syntax</div>
+        <span class="badge text-bg-primary">{{variables}}</span>
+        <span class="badge text-bg-secondary">{{functions}}</span>
+        <span class="badge text-bg-success">{{conditionals}}</span>
+        <span class="badge text-bg-danger">{{loops}}</span>
+        <span class="badge text-bg-warning">{{classes}}</span>
+        {{/with}}
+    </div>
+    <br>
+    <div>
+        <div class="display-6">Features</div>
+        <br>
+        <ol>
+            <li class="badge text-bg-info">{{features}}</li>
+        </ol>
+    </div>
+    <br>
+    <div>
+        <div class="display-6">Libraries</div>
+        <br>
+        <ol>
+            <li class="badge rounded-pill text-bg-warning">{{libraries}}</li>
+        </ol>
+    </div>
+    <br>
+    <div>
+        <div class="display-6">Tools</div>
+        <br>
+        <ol>
+            <li class="badge rounded-pill text-bg-success">{{tools}}</li>
+        </ol>
+    </div>
+    <br>
+    <div>
+        <div class="display-6">Community</div>
+        <br>
+        <ul>
+            {{#each community}}
+            <li><button type="button" class="btn btn-link">{{name}}</button></li>
+            <li><b>{{type}}</b></li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
