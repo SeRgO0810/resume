@@ -1,0 +1,137 @@
+<div>
+    <center>
+        <h1>Apple MacBook Pro</h1>
+    </center>
+    <br>
+    <div>
+        <center>
+            <ul>
+                <li><strong class="badge rounded-pill text-bg-warning">description: {{description}}</strong></li>
+                <li><b class="badge rounded-pill text-bg-Success">price: {{price}}</b></li>
+                <li><b class="badge rounded-pill text-bg-warning">category: {{category}}</b></li>
+            </ul>
+        </center>
+    </div>
+    <hr>
+    <center>
+        <div class="display-6">Features</div>
+    </center>
+    <br>
+    <div>
+        {{#with features}}
+        <div class="textcols3">
+            <div class="textcols3-item">
+                <div>
+                    {{#with processor}}
+                    <div class="display-6">Processor</div>
+                    <br>
+                    <ul>
+                        <li>brand:<b class="badge rounded-pill text-bg-info">{{brand}}</b></li>
+                        <li>model:<b class="badge rounded-pill text-bg-info">{{model}}</b></li>
+                        <li>speed:<b class="badge rounded-pill text-bg-info">{{speed}}</b></li>
+                        <li>cores:<b class="badge rounded-pill text-bg-info">{{cores}}</b></li>
+                        <li>cache:<b class="badge rounded-pill text-bg-info">{{cache}}</b></li>
+                    </ul>
+                    {{/with}}
+                </div>
+                <div>
+                    {{#with memory}}
+                    <div class="display-6">Memory</div>
+                    <br>
+                    <ul>
+                        <li>type:<b class="badge rounded-pill text-bg-info">{{type}}</b></li>
+                        <li>size:<b class="badge rounded-pill text-bg-info">{{size}}</b></li>
+                        <li>speed:<b class="badge rounded-pill text-bg-info">{{speed}}</b></li>
+                    </ul>
+                    {{/with}}
+                </div>
+                <div>
+                    {{#with storage}}
+                    <div class="display-6">Storage</div>
+                    <br>
+                    <ul>
+                        <li>type:<b class="badge rounded-pill text-bg-info">{{type}}</b></li>
+                        <li>size:<b class="badge rounded-pill text-bg-info">{{size}}</b></li>
+                    </ul>
+                    {{/with}}
+                </div>
+                <div>
+                    {{#with display}}
+                    <div class="display-6">Display</div>
+                    <br>
+                    <ul>
+                        <li>size:<b class="badge rounded-pill text-bg-info">{{size}}</b></li>
+                        <li>resolution:<b class="badge rounded-pill text-bg-info">{{resolution}}</b></li>
+                        <li>technology:<b class="badge rounded-pill text-bg-info">{{technology}}</b></li>
+                        <li>color space:<b class="badge rounded-pill text-bg-info">{{color_space}}</b></li>
+                        <li>brightness:<b class="badge rounded-pill text-bg-info">{{brightness}}</b></li>
+                        <li>refresh rate:<b class="badge rounded-pill text-bg-info">{{refresh_rate}}</b></li>
+                    </ul>
+                    {{/with}}
+                </div>
+                <div>
+                    {{#with graphics}}
+                    <div class="display-6">Graphics</div>
+                    <br>
+                    <ul>
+                        <li>brand:<b class="badge rounded-pill text-bg-info">{{brand}}</b></li>
+                        <li>model:<b class="badge rounded-pill text-bg-info">{{model}}</b></li>
+                        <li>memory:<b class="badge rounded-pill text-bg-info">{{memory}}</b></li>
+                    </ul>
+                    {{/with}}
+                </div>
+            </div>
+            <div class="textcols3-item">
+                <div>
+                    <div class="display-6">Ports</div>
+                    <br>
+                    <ul>
+                        {{#each ports}}
+                        <li>type:<b class="badge rounded-pill text-bg-info">{{type}}</b></li>
+                        <li>count:<b class="badge rounded-pill text-bg-info">{{count}}</b></li>
+                        <li><b class="badge rounded-pill text-bg-danger">{{features}}</b></li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div>
+                    {{#with battery}}
+                    <div class="display-6">Battery</div>
+                    <br>
+                    <ul>
+                        <li>type: <b class="badge rounded-pill text-bg-Success">{{type}}</b></li>
+                        <li>capacity: <b class="badge rounded-pill text-bg-Success">{{capacity}}</b></li>
+                        <li>life: <b class="badge rounded-pill text-bg-Success">{{life}}</b></li>
+                    </ul>
+                    {{/with}}
+                </div>
+                <div>weight: <b class="badge rounded-pill text-bg-Success">{{weight}}</b></div>
+                <div>
+                    {{#with dimensions}}
+                    <div class="display-6">Dimensions</div>
+                    <br>
+                    <ul>
+                        <li>height: <b class="badge rounded-pill text-bg-Success">{{height}}</b></li>
+                        <li>width: <b class="badge rounded-pill text-bg-Success">{{width}}</b></li>
+                        <li>depth: <b class="badge rounded-pill text-bg-Success">{{depth}}</b></li>
+                    </ul>
+                    {{/with}}
+                </div>
+                <br>
+                <div>
+                    <strong>Operating system:</strong>
+                    <b class="badge rounded-pill text-bg-warning">{{operating_system}}</b>
+                </div>
+                <div>
+                    <div class="display-6">Accessories</div>
+                    <br>
+                    <ul>
+                        {{#each accessories}}
+                        <li>name:<b class="badge rounded-pill text-bg-warning">{{name}}</b></li>
+                        <li>price:<b class="badge rounded-pill text-bg-Success">{{price}}</b></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {{/with}}
+    </div>
