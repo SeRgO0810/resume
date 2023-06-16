@@ -1,0 +1,148 @@
+<div>
+  <center>
+    <h1>{{name}}</h1>
+  </center>
+</div>
+<hr />
+<div>
+  {{#each users}}
+  <main>
+    <div>
+      <section>
+        <div>
+          <br />
+          <ul>
+            <div class='display-6'>User</div>
+            <li><b class='badge rounded-pill text-bg-info'>{{id}}</b></li>
+            <li><b class='badge rounded-pill text-bg-info'>{{name}}</b></li>
+            <li><b class='badge rounded-pill text-bg-info'>{{gender}}</b></li>
+            <li><b class='badge rounded-pill text-bg-info'>{{age}}</b></li>
+            <br />
+            <div>
+              <ul>
+                {{#each friends}}
+                <div class='display-6'>Friends</div>
+                <li><b class='badge rounded-pill text-bg-info'>{{id}}</b></li>
+                <li><b class='badge rounded-pill text-bg-info'>{{name}}</b></li>
+                <li><b class='badge rounded-pill text-bg-info'>{{gender}}</b></li>
+                <li><b class='badge rounded-pill text-bg-info'>{{age}}</b></li>
+                <div>
+                  <ul>
+                    {{#each mutual_friends}}
+                    <div class='display-6'>Mutual friends</div>
+                    <li><b class='badge rounded-pill text-bg-info'>{{id}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-info'>{{name}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-info'>{{gender}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-info'>{{age}}</b></li>
+
+                    {{/each}}
+                  </ul>
+                </div>
+                {{/each}}
+              </ul>
+            </div>
+            <div>
+              <ul>
+                {{#each groups}}
+                <div class='display-6'>Groups</div>
+                <li><b class='badge rounded-pill text-bg-info'>{{id}}</b></li>
+                <li><b class='badge rounded-pill text-bg-info'>{{name}}</b></li>
+                <li><b class='badge rounded-pill text-bg-warning'>{{description}}</b></li>
+                <div>
+                  <ul>
+                    {{#each members}}
+                    <div class='display-6'>Members</div>
+                    <li><b class='badge rounded-pill text-bg-Success'>{{id}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-Success'>{{name}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-Success'>{{gender}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-Success'>{{age}}</b></li>
+                    {{/each}}
+                  </ul>
+                </div>
+                <ul>
+                  <li><b class='badge rounded-pill text-bg-info'>{{id}}</b></li>
+                  <li><b class='badge rounded-pill text-bg-info'>{{name}}</b></li>
+                  <li><b class='badge rounded-pill text-bg-warning'>{{description}}</b></li>
+                </ul>
+                <div>
+                  <ul>
+                    {{#each members}}
+                    <div class='display-6'>Members</div>
+                    <li><b class='badge rounded-pill text-bg-Success'>{{id}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-Success'>{{name}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-Success'>{{gender}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-Success'>{{age}}</b></li>
+                    {{/each}}
+                  </ul>
+                </div>
+                {{/each}}
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section>
+        <div>
+          <ul>
+            <li><b class='badge rounded-pill text-bg-info'>{{[1].id}}</b></li>
+            <li><b class='badge rounded-pill text-bg-info'>{{[1].name}}</b></li>
+            <li><b class='badge rounded-pill text-bg-info'>{{[1].gender}}</b></li>
+            <li><b class='badge rounded-pill text-bg-info'>{{[1].age}}</b></li>
+          </ul>
+          <div>
+            <ul>
+              {{#each friends}}
+              <li><b class='badge rounded-pill text-bg-info'>{{[1].id}}</b></li>
+              <li><b class='badge rounded-pill text-bg-info'>{{[1].name}}</b></li>
+              <li><b class='badge rounded-pill text-bg-info'>{{[1].gender}}</b></li>
+              <li><b class='badge rounded-pill text-bg-info'>{{[1].age}}</b></li>
+              <div>
+                <ul>
+                  {{#each mutual_friends}}
+                  <li><b class='badge rounded-pill text-bg-info'>{{[1].id}}</b></li>
+                  <li><b class='badge rounded-pill text-bg-info'>{{[1].name}}</b></li>
+                  <li><b class='badge rounded-pill text-bg-info'>{{[1].gender}}</b></li>
+                  <li><b class='badge rounded-pill text-bg-info'>{{[1].age}}</b></li>
+                  <ul>
+                    {{#each mutual_friends}}
+                    <li><b class='badge rounded-pill text-bg-info'>{{id}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-info'>{{name}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-info'>{{gender}}</b></li>
+                    <li><b class='badge rounded-pill text-bg-info'>{{age}}</b></li>
+                    {{/each}}
+                  </ul>
+                  {{/each}}
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  {{#each groups}}
+                  <div class='display-6'>Groups</div>
+                  <li><b class='badge rounded-pill text-bg-info'>{{id}}</b></li>
+                  <li><b class='badge rounded-pill text-bg-info'>{{name}}</b></li>
+                  <li><b class='badge rounded-pill text-bg-warning'>{{description}}</b></li>
+                  <div>
+                    <ul>
+                      {{#each members}}
+                      <div class='display-6'>Members</div>
+                      <li><b class='badge rounded-pill text-bg-Success'>{{id}}</b></li>
+                      <li><b class='badge rounded-pill text-bg-Success'>{{name}}</b></li>
+                      <li><b class='badge rounded-pill text-bg-Success'>{{gender}}</b></li>
+                      <li><b class='badge rounded-pill text-bg-Success'>{{age}}</b></li>
+                      {{/each}}
+                    </ul>
+                  </div>
+                  {{/each}}
+                </ul>
+              </div>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  {{/each}}
+</div>
