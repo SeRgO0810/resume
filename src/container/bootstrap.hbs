@@ -1,83 +1,269 @@
 <main>
-  <h1 class="text-center">Hello world</h1>
-  {{!-- Вирівнює текст по центру --}}
-  <h2 class="text-end">Hello world</h2>
-  {{!-- вирівнює текст справа --}}
-  <h3>Hello world</h3>
+  <div class="row gy-5">
+    <h1 class="text-center">Hello world</h1>
+    {{!-- Вирівнює текст по центру --}}
+    <h2 class="text-end">Hello world</h2>
+    {{!-- вирівнює текст справа --}}
+    <h3>Hello world</h3>
 
-  <hr>
+    <hr>
 
-  {{!-- використовуються для зміни регістру тексту --}}
-  <h1 class="text-uppercase">Hello world</h1>
-  {{!-- робе всі букви ведикими --}}
-  <h1 class="text-lowercase">Hello world</h1>
-  {{!-- робе всі букви маленькими --}}
-  <h1 class="text-capitalize">Hello world</h1>
-  {{!-- пише кожне слово з великої букви --}}
+    {{!-- використовуються для зміни регістру тексту --}}
+    <h1 class="text-uppercase">Hello world</h1>
+    {{!-- робе всі букви ведикими --}}
+    <h1 class="text-lowercase">Hello world</h1>
+    {{!-- робе всі букви маленькими --}}
+    <h1 class="text-capitalize">Hello world</h1>
+    {{!-- пише кожне слово з великої букви --}}
 
-  <hr>
-  {{!-- Заголовки --}}
-  <div class="display-1">Hello world</div>
-  <div class="display-2">Hello world</div>
-  <div class="display-3">Hello world</div>
-  <div class="display-4">Hello world</div>
-  <div class="display-5">Hello world</div>
-  <div class="display-6">Hello world</div>
+    <hr>
+    {{!-- Заголовки --}}
+    <div class="display-1">Hello world</div>
+    <div class="display-2">Hello world</div>
+    <div class="display-3">Hello world</div>
+    <div class="display-4">Hello world</div>
+    <div class="display-5">Hello world</div>
+    <div class="display-6">Hello world</div>
 
-  <hr>
+    <hr>
 
-  <span class="text-muted">додатковий текст</span>
-  {{!-- окрашує текст в сірий колір --}}
+    <span class="text-muted">додатковий текст</span>
+    {{!-- окрашує текст в сірий колір --}}
 
-  <hr>
+    <hr>
 
-  <button class="btn btn-primary">
-    <span class="text-uppercase">Button primary</span>
-  </button>
-  <button class="btn btn-danger">
-    <span class="text-uppercase">Button danger</span>
-  </button>
-  ...
-  {{!-- class btn - створює кнопку з повною заливкою кольору --}}
+    <button class="btn btn-primary">
+      <span class="text-uppercase">Button primary</span>
+    </button>
+    <button class="btn btn-danger">
+      <span class="text-uppercase">Button danger</span>
+    </button>
+    ...
+    {{!-- class btn - створює кнопку з повною заливкою кольору --}}
 
-  <a href="#" class="btn btn=link">Посилання</a>
-  {{!-- Вказує на кнопку посилання --}}
+    <a href="#" class="btn btn=link">Посилання</a>
+    {{!-- Вказує на кнопку посилання --}}
 
-  <hr>
+    <hr>
 
-  <div class="text-primary">My text</div>
-  <div class="text-danger">My text</div>
-  ...
-  {{!-- class="text-..." фарбує текст --}}
+    <div class="text-primary">My text</div>
+    <div class="text-danger">My text</div>
+    ...
+    {{!-- class="text-..." фарбує текст --}}
 
-  <hr>
+    <hr>
 
-  <button class="btn btn-outline-success">Додати</button>
-  <button class="btn btn-outline-warning">Редагувати</button>
-  <button class="btn btn-outline-danger">Видалити</button>
-  ...
-  {{!-- class btn - створює кнопку з тіньовим контуром --}}
-  {{!-- в основному для другорядних кнопок --}}
+    <button class="btn btn-outline-success">Додати</button>
+    <button class="btn btn-outline-warning">Редагувати</button>
+    <button class="btn btn-outline-danger">Видалити</button>
+    ...
+    {{!-- class btn - створює кнопку з тіньовим контуром --}}
+    {{!-- в основному для другорядних кнопок --}}
 
-  <hr>
+    <hr>
 
-  <button class="btn btn-outline-success btn-lg">Додати</button>
-  {{!-- зробити кнопку великою btn-lg --}}
-  <button class="btn btn-outline-danger">Видалити</button>
-  <button class="btn btn-outline-warning btn-sm">Редагувати</button>
-  {{!-- зробити кнопку маленькою btn-sm --}}
+    <button class="btn btn-outline-success btn-lg">Додати</button>
+    {{!-- зробити кнопку великою btn-lg --}}
+    <button class="btn btn-outline-danger">Видалити</button>
+    <button class="btn btn-outline-warning btn-sm">Редагувати</button>
+    {{!-- зробити кнопку маленькою btn-sm --}}
 
-  <hr>
+    <hr>
 
-  {{!-- Block або Box - це компонент, який створює коробку для
-  контенту, яка має сіру рамку довкола контенту --}}
+    {{!-- Block або Box - це компонент, який створює коробку для
+    контенту, яка має сіру рамку довкола контенту --}}
 
-  {{!-- card клас для контейнера, який надає рамку для коробки --}}
-  {{!-- card-body відповідає за відображення контенту коробки --}}
+    {{!-- card клас для контейнера, який надає рамку для коробки --}}
+    {{!-- card-body відповідає за відображення контенту коробки --}}
 
-  <div class="card">
-    <div class="card-body">
-      This is content
+    <div class="card">
+      <div class="card-body">
+        This is content
+      </div>
+    </div>
+
+    <hr>
+
+    {{!-- Card - це компонент, який створює карточку сутності
+    card клас для контейнера, який надає рамку для карточки
+
+    card-img-top відповідає за оформлення верхньої частини картинки
+
+    card-body відповідає за відображення тіла карти
+
+    card-title відповідає за відображення заголовка (title) картки --}}
+    <section class="col-12">
+      <div class="card text-bg-dark">
+        <img clas="card-img-top" src="https://picsum.photos/400/200" alt="Product photo">
+        <div class="card-body">
+          <h5 class="card-title text-bg-primary">Product #16433</h5>
+          <p class="text-bg-secondary">USB хаб Type c 12</p>
+          <a href="/mac" class="btn btn-primary">Open</a>
+        </div>
+      </div>
+    </section>
+
+
+    {{!-- List - це компонент, який створює список
+    list-group вказує на клас для створення списку
+    list-group-flush видаляє відступи між елементами списку та фону
+    list-group-item вказує на клас для створення елемента списку --}}
+
+    {{!-- card-header клас для створення заголовка картки
+    card-footer клас для створення футера картки --}}
+
+    <div class="card text-bg-primary">
+      <div class="card-header">
+        <div class="display-6">Menu</div>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item text-bg-dark">
+          <a href="/mac" class="btn btn-link">Home page</a>
+        </li>
+        <li class="list-group-item text-bg-warning">
+          <a href="/mac" class="btn btn-link">Summary page</a>
+        </li>
+        <li class="list-group-item text-bg-danger">
+          <a href="/mac" class="btn btn-link">Skills page</a>
+        </li>
+      </ul>
+
+      <div class="card-footer">
+        <button class="btn btn-dark btn-sm">Update list</button>
+      </div>
+    </div>
+
+
+    {{!-- Tables - це компонент, який створює таблиці
+    table клас для контейнера таблиці
+    table-striped додає смугастий стиль до таблиці
+    table-bordered додає рамку до таблиці та її елементів --}}
+
+    {{!-- Background color - це додатковий class name,
+    який дає можливість зафарбувати фон компонента
+    class Опис
+
+    text-bg-primary визначає основний колір
+    text-bg-secondary визначає додатковий колір
+    text-bg-success визначає зелений (успішний) колір
+    text-bg-danger визначає червоний (небезпечний) колір
+    text-bg-warning визначає жовтий (попереджувальний) колір
+    text-bg-info визначає блакитний (інформаційний) колір
+    text-bg-light визначає світлий колір
+    text-bg-dark визначає темний колір --}}
+
+    <table class="table table-bordered text-bg-success">
+      <thead>
+        <tr>
+          <th>
+            #id
+          </th>
+          <th>
+            name
+          </th>
+          <th>
+            age
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Jhon</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Ivan</td>
+          <td>29</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Ivan</td>
+          <td>29</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="card text-bg-success">
+      <div class="card-header text-center">Header</div>
+      <div class="card-body text-center">
+        <h6 class="card-title">This is title</h6>
+        <p>This is content of our box</p>
+        <button class="btn btn-light">Click</button>
+      </div>
+      <div class="card-footer text-center">Footer</div>
+    </div>
+
+
+    {{!-- Сітка - це підхід до верстки інтерфейсів,
+    в якому ми розділяємо наш контент на 12 колонок
+
+    row визначає рядок стовпців у сітковій системі
+
+    сol-* визначає ширину стовпців у системі сітки
+    замініть * на число від 1 до 12, щоб визначити
+    скільки стовпців має охоплювати ваш елемент. --}}
+
+    {{!-- Розрив колонок
+
+    class Опис
+
+    g-* визначає вертикальний та горизонтальний розрив
+    замініть * на число від 1 до 5, щоб визначити
+    на скільки великими мають бути відступи
+
+    gy-* визначає вертикальний розрив
+
+    gx-* визначає горизонтальний розрив --}}
+
+    <div class="row g-5">
+      <div class="col-4">
+        <div class="card text-bg-success">
+          <div class="card-header text-center">Header</div>
+          <div class="card-body text-center">
+            <h6 class="card-title">This is title</h6>
+            <p>This is content of our box</p>
+            <button class="btn btn-light">Click</button>
+          </div>
+          <div class="card-footer text-center">Footer</div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card text-bg-success">
+          <div class="card-header text-center">Header</div>
+          <div class="card-body text-center">
+            <h6 class="card-title">This is title</h6>
+            <p>This is content of our box</p>
+            <button class="btn btn-light">Click</button>
+          </div>
+          <div class="card-footer text-center">Footer</div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card text-bg-success">
+          <div class="card-header text-center">Header</div>
+          <div class="card-body text-center">
+            <h6 class="card-title">This is title</h6>
+            <p>This is content of our box</p>
+            <button class="btn btn-light">Click</button>
+          </div>
+          <div class="card-footer text-center">Footer</div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card text-bg-success">
+          <div class="card-header text-center">Header</div>
+          <div class="card-body text-center">
+            <h6 class="card-title">This is title</h6>
+            <p>This is content of our box</p>
+            <button class="btn btn-light">Click</button>
+          </div>
+          <div class="card-footer text-center">Footer</div>
+        </div>
+      </div>
     </div>
   </div>
 </main>
