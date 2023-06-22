@@ -79,17 +79,17 @@
         {{#with gallery}}
         <section>
             <h2>{{title}}</h2>
-            <div>
+            <div class="col-4">
                 {{#each cards}}
-                <div class="col-12 row g-2">
-                    <div class="card col-4">
-                        <div class="card-header">
-                            <div>{{name}}</div>
-                        </div>
-                        <ul class="list-group">
-                            <li class="list-group-item">{{items}}</li>
-                        </ul>
+                <div class="card">
+                    <div class="card-header">
+                        <div>{{name}}</div>
                     </div>
+                    {{#each items}}
+                    <ul class="list-group">
+                        <li class="list-group-item">{{this}}</li>
+                    </ul>
+                    {{/each}}
                 </div>
                 {{/each}}
             </div>
