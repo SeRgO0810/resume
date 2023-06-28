@@ -266,4 +266,120 @@
       </div>
     </div>
   </div>
+
+  <br>
+  <bt>
+
+    {{!-- Nav - це компонент, який створює навігаційне меню --}}
+
+    {{!-- nav клас для контейнера
+    nav-item клас для елемента
+    nav-link клас для посилання всередині елемента
+    active клас для активного посилання
+    disabled клас для неактивного посилання --}}
+
+    {{!-- flex-column клас для контейнера,
+    щоб вивести елементи вертикально
+    nav-tabs клас для контейнера, щоб вивести
+    меню навігації в форматі вкладок --}}
+
+
+    <div class="row g-4">
+      <div class="col-12">
+        <div class="nav nav-tabs">
+          <div class="nav-item">
+            <a href="#" class="nav-link">Main</a>
+          </div>
+          <div class="nav-item">
+            <a href="#" class="nav-link active">Catalog</a>
+          </div>
+          <div class="nav-item">
+            <a href="#" class="nav-link disabled">Shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="nav flex-column">
+              <div class="nav-item">
+                <div class="card">
+                  <a href="/mac" class="nav-link">home page</a>
+                </div>
+              </div>
+              <br>
+              <div class="nav-item">
+                <div class="card">
+                  <a href="/car" class="nav-link active">bootstrap</a>
+                </div>
+              </div>
+              <br>
+              <div class="nav-item">
+                <div class="card">
+                  <a href="/person" class="nav-link disabled">FAQ page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{!-- Breadcrumb (“хлібні крихти”) - це навігаційний компонент,
+      який відображає ієрархію сторінок на сайті та дозволяє
+      користувачеві легко повернутись до попередніх сторінок. --}}
+      {{!-- breadcrumb клас для контейнера
+      breadcrumb-item клас для елемента --}}
+
+      {{!-- Badge - це компонент, який вказує значок з контентом --}}
+      {{!-- badge клас для контейнера
+      rounded-pill робить заокруглення країв компонента --}}
+
+      {{!-- text-bg-primary визначає основний колір
+      text-bg-secondary визначає додатковий колір
+      text-bg-success визначає зелений (успішний) колір
+      text-bg-danger визначає червоний (небезпечний) колір
+      text-bg-warning визначає жовтий (попереджувальний) колір
+      text-bg-info визначає блакитний (інформаційний) колір
+      text-bg-light визначає світлий колір
+      text-bg-dark визначає темний колір --}}
+
+      {{!-- Alert - це компонент, який відображає повідомлення
+      alert визначає контейнер для компонента
+      alert-primary визначає основний колір
+      alert-secondary визначає додатковий колір
+      alert-success визначає зелений (успішний) колір
+      alert-danger визначає червоний (небезпечний) колір
+      alert-warning визначає жовтий (попереджувальний) колір
+      alert-info визначає блакитний (інформаційний) колір
+      alert-light визначає світлий колір
+      alert-dark визначає темний колір --}}
+
+      <div class="col-8">
+        <div class="row">
+          <div class="col-12">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">PC та Ноутбук</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">Macbook</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-warning rounded-pill m-5">Click me</button>
+            <div class="alert alert-dark">
+              <h6>
+                Hello world! <span class="badge text-bg-primary rounded-pill text-uppercase">Топ продаж</span>
+              </h6>
+              <button class="btn btn-primary rounded-pill">Click me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </main>
